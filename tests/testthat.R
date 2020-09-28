@@ -1,1 +1,1 @@
-test_check("SwedishElectionData")
+#test_check("SwedishElectionData")
