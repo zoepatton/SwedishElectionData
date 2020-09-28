@@ -1,6 +1,6 @@
 Package: SwedishElectionData
 Type: Package
-Title: What the package does (short line)
+Title: Extracts Swedish election data from API
 Version: 1.0
 Date: 2020-09-28
 Author: Who wrote it
