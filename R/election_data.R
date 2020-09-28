@@ -2,9 +2,8 @@
 #'
 #' This function allows the user to connect to the web API provided by Valmyndigheten to access the election results from 2014. 
 #'
-#' @param ... Numeric, complex, or logical vectors.
-#' @param na.rm A logical scalar. Should missing values (including NaN)
-#'   be removed?
+#' @param level characters
+#' @param type characters
 #' @return put what the function returns here 
 #' }
 
