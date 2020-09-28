@@ -5,7 +5,7 @@
 #' @param level characters
 #' @param type characters
 #' @return put what the function returns here 
-#' }
+#' @export
 
 
 election_data <-
