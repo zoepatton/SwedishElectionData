@@ -8,11 +8,14 @@
 #' @export
 
 
-election_data <-
-function(level, type){
+election_data <- function(level, type){
   
   if(!is.character(level)){stop("Error: Level input should be character")}
   if(!is.character(type)){stop("Error: Type input should be character")}
+  if(type == "landsting"){stop("Error: Invalid Input")}
+  if(type == "riksdag"){stop("Error: Invalid Input")}
+  if(level == "valdistrikt"){stop("Error: Invalid Input")}
+  
   
   if(level == "riksdag" && type == "kommun"){
     
@@ -46,6 +49,7 @@ function(level, type){
     df2 <- readxl::read_excel(tf2)
     val2 <- data.frame(df2)
     val2 <- val2[-1,]
+    
     return(head(val2))
     
   }
@@ -82,3 +86,6 @@ function(level, type){
   }
   
 }
+
+
+#election_data(level="landsting",type="riksdag")
