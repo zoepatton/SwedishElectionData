@@ -1,0 +1,31 @@
+---
+title: "SwedishElectionData"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{SwedishElectionData-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+## API
+
+This package extracts data from the API of 
+
+
+## The package
+This R package 
+
+## Data
+The package includes one function 
+
+
+
+```{r setup}
+library(SwedishElectionData)
+```
