@@ -13,16 +13,35 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
-## API
+## API and Package
 
-This package extracts data from the API of 
+This package extracts data from the web API provided by Valmyndigheten to access the Swedish election results from 2014. 
 
-
-## The package
-This R package 
 
 ## Data
-The package includes one function 
+The output is a data frame with either level: landsting, riksdag, or kommun and type of either: kommun or valdistrikt. It shows the top 5 municipalities with the total number of votes for each party.  
+
+## How to Use  
+
+To install package:  
+
+``` r
+install.packages("zoepatton/SwedishElectionData")
+```  
+
+To use function:
+``` r
+election_data(level="landsting",type="kommun")
+```   
+
+
+To install and run the corresponding shiny app:  
+
+``` r
+library(shiny)
+library(SwedishElectionData)
+runGitHub("SwedishElectionData-Shiny","zoepatton")
+```  
 
 
 
