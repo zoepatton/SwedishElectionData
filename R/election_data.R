@@ -69,7 +69,7 @@ election_data <- function(level, type){
     my_url4 <- "https://data.val.se/val/val2014/statistik/2014_kommunval_per_kommun.xlsx"
     
     httr::GET(my_url4, httr::write_disk(tf4 <- tempfile(fileext = ".xlsx")))
-    df4 <- readxl::read_excel(tf4)
+    df4 <- readxl::read_xlsx(tf4)
     val4 <- data.frame(df4)
     val4 <- val4[-1,]
     return(head(val4))
@@ -79,7 +79,7 @@ election_data <- function(level, type){
     my_url5 <- "https://data.val.se/val/val2014/statistik/2014_kommunval_per_valdistrikt.xlsx"
     
     httr::GET(my_url5, httr::write_disk(tf5 <- tempfile(fileext = ".xlsx")))
-    df5 <- readxl::read_excel(tf5)
+    df5 <- readxl::read_xlsx(tf5)
     val5 <- data.frame(df5)
     val5 <- val5[-1,]
     return(head(val5))
