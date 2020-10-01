@@ -12,10 +12,9 @@ LazyData: true
 Imports:
     dplyr,
     httr,
-    readxl,
+    readxl
 RoxygenNote: 7.1.1
 Suggests: 
     knitr,
     rmarkdown,
-    xlsx
 VignetteBuilder: knitr
