@@ -12,7 +12,7 @@ election_data(level, type)
 \item{type}{characters}
 }
 \value{
-put what the function returns here
+the function returns a dataframe with the corresponding inputs
 }
 \description{
 This function allows the user to connect to the web API provided by Valmyndigheten to access the election results from 2014.
