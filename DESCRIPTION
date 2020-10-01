@@ -13,9 +13,9 @@ Imports:
     dplyr,
     httr,
     readxl,
-    xlsx
 RoxygenNote: 7.1.1
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    xlsx
 VignetteBuilder: knitr
